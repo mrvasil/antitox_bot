@@ -1,7 +1,10 @@
 import telebot
 from model import predict_toxic
+from dotenv import load_dotenv
+import os
 
-bot = telebot.TeleBot("7707698315:AAGkNFyTYVXH33YHhXeYmzDC_9CFPC8iD9E")
+load_dotenv()
+bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
 
 channel_id = -1002428621580
 group_id = -1002351877780

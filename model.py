@@ -58,7 +58,7 @@ def predict_toxic(text):
     prediction = model.predict_proba(text_vec)[0]
     return prediction[1]
 
-while True:
-    text = input(">")
-    toxicity = predict_toxic(text)
-    print(f"Вероятность: {toxicity:.2%}")
+# while True:
+#     text = input(">")
+#     toxicity = predict_toxic(text)
+#     print(f"Вероятность: {toxicity:.2%}")

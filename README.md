@@ -1,5 +1,13 @@
 <h2>Telegram bot for monitoring toxic comments.</h2>
 
+<h3>Quick start:</h3>
+
+```
+echo "BOT_TOKEN=52:ZZZ_ASD" > .env
+docker-compose up -d    
+```
+
+
 Dataset - https://www.kaggle.com/datasets/blackmoon/russian-language-toxic-comments
 
 Сhannel for testing the bot - https://t.me/antitoxasd

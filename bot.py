@@ -43,8 +43,8 @@ def handle_config(message):
         add_channel_group_pair(channel_id, group_id)
         bot.reply_to(message, 
             f"Настройка завершена!\n"
-            f"Канал ID: {channel_id}\n"
-            f"Группа ID: {group_id}\n\n"
+            f"ID канала: {channel_id}\n"
+            f"ID группы: {group_id}\n\n"
             f"Вы можете добавить еще одну пару, отправив новую конфигурацию"
         )
     except:

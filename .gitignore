@@ -174,4 +174,3 @@ cython_debug/
 toxicity_model.joblib
 vectorizer.joblib
 .env
-channels_config.json

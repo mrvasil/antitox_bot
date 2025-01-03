@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  bot:
+    build: .
+    volumes:
+      - ./.env:/app/.env
+      - ./models/:/app/models/
+      - ./channels_config.json:/app/channels_config.json
+    restart: unless-stopped

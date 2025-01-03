@@ -28,8 +28,8 @@ def preprocess(text):
     return ' '.join(tokens)
 
 
-MODEL_PATH = 'toxicity_model.joblib'
-VECTORIZER_PATH = 'vectorizer.joblib'
+MODEL_PATH = 'models/toxicity_model.joblib'
+VECTORIZER_PATH = 'models/vectorizer.joblib'
 
 if not os.path.exists(MODEL_PATH) or not os.path.exists(VECTORIZER_PATH):
     data = pd.read_csv("./labeled.csv")
